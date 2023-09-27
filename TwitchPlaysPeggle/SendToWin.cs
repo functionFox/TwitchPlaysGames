@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace TwitchPlaysPeggle
+namespace TwitchPlaysGames
 {
     public class SendToWin
     {

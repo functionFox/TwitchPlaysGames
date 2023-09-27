@@ -3,11 +3,11 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Threading.Tasks;
 using AsyncAwaitBestPractices;
-using static TwitchPlaysPeggle.config;
-using static TwitchPlaysPeggle.SendToWin;
+using static TwitchPlaysGames.config;
+using static TwitchPlaysGames.SendToWin;
 using ws = WindowScrape;
 
-namespace TwitchPlaysPeggle
+namespace TwitchPlaysGames
 {
     class Program
     {
@@ -78,7 +78,6 @@ namespace TwitchPlaysPeggle
                     await twitchBot.SendMessage(twitchChatMessage.Channel, $"Let's start a new adventure!");
                     SendToWin.SetCursorPosition(xy.X + 666, xy.Y + 125);
                     Macros.LeftClick();
-                    p.ki
                 }
             };
             await Task.Delay(-1);
