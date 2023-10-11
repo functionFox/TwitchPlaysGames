@@ -1,5 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
+using Emgu;
+using Emgu.CV;
+using Emgu.CV.CvEnum;
+using Emgu.CV.Structure;
+using Emgu.CV.ML;
+using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace TwitchPlaysGames
 {

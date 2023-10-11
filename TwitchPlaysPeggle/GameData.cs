@@ -12,5 +12,7 @@ namespace TwitchPlaysGames
         public static string Name = "";
         public static int X = 0;
         public static int Y = 0;
+        public static bool UpgradeMode = false;
+        public static bool UpgradeOnLeft = false;
     }
 }

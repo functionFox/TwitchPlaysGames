@@ -3,12 +3,11 @@ using System.IO;
 using System.Net.Security;
 using System.Net.Sockets;
 using System.Security.Cryptography.X509Certificates;
-using System.Threading.Tasks;
 
 #pragma warning disable CS8618 // Although the compiler warns that it could be null, it actually will never be
 #pragma warning disable CS8622 // Same thing.
 
-namespace TwitchPlaysPeggle
+namespace TwitchPlaysGames
 {
     public class ChatBot
     {
@@ -81,7 +80,7 @@ namespace TwitchPlaysPeggle
                         //Skip the first character, the first colon, then find the next colon
                         int secondColonPosition = line.IndexOf(':', 1);//the 1 here is what skips the first character
                         string message = line.Substring(secondColonPosition + 1);//Everything past the second colon
-                        string channel = split[2].TrimStart('#');
+                         string channel = split[2].TrimStart('#');
 
                         OnMessage(this, new TwitchChatMessage
                         {
