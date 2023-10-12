@@ -20,12 +20,14 @@ namespace TwitchPlaysGames
         public static void LeftClick()
         {
             SendToWin.MouseEvent(SendToWin.MouseEventFlags.LeftDown);
+            Thread.Sleep(250);
             SendToWin.MouseEvent(SendToWin.MouseEventFlags.LeftUp);
         }
 
         public static void RightClick()
         {
             SendToWin.MouseEvent(SendToWin.MouseEventFlags.RightDown);
+            Thread.Sleep(250);
             SendToWin.MouseEvent(SendToWin.MouseEventFlags.RightUp);
         }
 

@@ -47,12 +47,10 @@ namespace TwitchPlaysGames
                 Hwnd = (IntPtr)0;
                 Console.WriteLine("Error: Window not available!");
             }
-            Macros.TakeScreenshot(tempPath, Hwnd);
+
             string password = configParam.oauth;
             string botUsername = configParam.nick;
             string channel = configParam.channel;
-            GameData.X = 1203;
-            GameData.Y = 941;
             
             mousePos = GetCursorPosition();
             xy = ws.Static.HwndInterface.GetHwndPos(Hwnd);
@@ -187,6 +185,9 @@ namespace TwitchPlaysGames
                     if ( relativeClickPos.X - xy.X != 0 )
                     {
                         Macros.SetMousePos(relativeClickPos.X, relativeClickPos.Y);
+                        ws.Static.HwndInterface.ActivateWindow(Hwnd);
+                        Thread.Sleep(250);
+                        Macros.LeftClick();
                         Macros.LeftClick();
                         GameData.UpgradeMode = false;
                     }
