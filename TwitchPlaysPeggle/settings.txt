@@ -1,0 +1,4 @@
+oauth = e58l0cl3x5wjalj8uq9bmn5kahyt5o
+nick = HidachanBot
+channel = functionFox
+game = Nova Drift

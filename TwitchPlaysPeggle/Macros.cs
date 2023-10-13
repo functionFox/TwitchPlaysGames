@@ -48,6 +48,12 @@ namespace TwitchPlaysGames
             sim.Keyboard.KeyPress(VirtualKeyCode.ESCAPE);
         }
 
+        public static void PressR()
+        {
+            InputSimulator sim = new();
+            sim.Keyboard.KeyPress(VirtualKeyCode.VK_R);
+        }
+
         public static void TakeScreenshot(string tempPath, IntPtr Hwnd)
         {
             ws.Static.HwndInterface.ActivateWindow(Hwnd);
